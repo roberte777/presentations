@@ -16,12 +16,12 @@ Crap Meeting
 <!-- pause -->
 Sike!
 <!-- end_slide -->
-Today's Topic
+Why You Should Care About Your Editor
 ---
 # Neovim!
-![](images/nvim.png "Rust")
+![](images/nvim.png "Nvim")
 <!-- end_slide -->
-Why Should You Care About Your Editor?
+Why You Should Care About Your Editor
 ---
 ## Increased Coding Speed
 - More code = $$
@@ -34,25 +34,59 @@ you are looking for in your codebase
 - Automated abstractions
 - Multi cursors and Macros
 ## Personalized Development
+Increased capability to understand and engineer code by doing it in an environment
+that is natural to you.
 <!-- end_slide -->
 What is Neovim
 ---
+<!-- pause -->
+- For Nerds
+<!-- pause -->
+- For Difficult People
+<!-- pause -->
+- No Value
+<!-- pause -->
+- Look Cool
+<!-- end_slide -->
+What is Neovim
+---
+- For Nerds ✅
+- For Difficult People ✅
+- No Value ❌
+- Look Cool ✅
+<!-- end_slide -->
+What is Neovim
+---
+## Text Editor
+- Only the features ***you*** want
+- Lightweight by default
 ## Terminal Based
 - Runs in the terminal
 - *Blazingly* fast
 ## Modal
-- Default (`Normal`) mode is for movement
-- Enter `Insert` mode to edit
-- Enter `Visual` mode for highlighting
+- `Normal` mode is for movement
+- `Insert` mode is for editing
+- `Visual` mode for highlighting
 ## Extensible
 - Plugin system
 - Massive community
 ## Personalized (optional)
 - No two setups are alike
 - My setup is optimized for ***me***
-## Text Editor
-- Only the features ***you*** want
-- Lightweight by default
+<!-- end_slide -->
+Misconceptions
+---
+- No Syntax Highlighting
+- No Code Suggestions
+- No Filetree or Workspace Symbols
+<!-- end_slide -->
+Key Features
+---
+- Vim Motions
+- Quick File Switching (Harpoon)
+- Fuzzy File Finder
+- Macros
+- AI Integrations
 <!-- end_slide -->
 Example!
 ---
