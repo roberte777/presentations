@@ -53,7 +53,7 @@ What we want to avoid
 
 # Why Python
 
-On GitHub:
+Most poular language on GitHub (by far):
 
 - Most stars
 - Most pull requests
@@ -96,6 +96,8 @@ await pub.put(json.dumps({message: "Hello CRAP!"}))
 msg = await sub.get()
 ```
 
+Additionally, the PyToolbox supports the current broker, and the new (blazingly fast) Rust broker
+
 ---
 
 # Stats
@@ -110,6 +112,15 @@ PyToolbox used in the creation of services for the MENTOR demo:
 
 ## Results
 
-This probably would have taken anyone but Stephen a month to complete
+Brett had working prototypes for these three services in 5 working days (Nov 16 - Nov 22)
 
-Nov 16 - Nov 22 for working prototypes (5 working days)
+These services:
+
+- Interact with each other over CDX Mesh
+- Send voice from microphones
+- Play voice on speakers
+- Train a classification model
+- Use a classification model to match text phrases
+- Speak matched phrases over speakers
+
+These are complicated services, leveraging the Python ecosystem and CDX Mesh.
