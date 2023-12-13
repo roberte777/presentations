@@ -22,7 +22,7 @@ What we want to avoid
 ~~~graph-easy --as=boxart
 [ Messenger 1 ] -> [ Messenger 2 ], [ Messenger 3 ], [ Messenger 4 ]
 [ Messenger 2 ] -> [ Messenger 1 ], [Messenger 4]
-[ Messenger 3 ] -> [ Meseenger 1 ], [ Messenger 2 ], [ Messenger 4 ]
+[ Messenger 3 ] -> [ Mesenger 1 ], [ Messenger 2 ], [ Messenger 4 ]
 ~~~
 ```
 
@@ -47,7 +47,7 @@ What we want to avoid
 - From a user perspective, a subscriber simply connects to the broker and receives messages on a topic
 - Simple thought process for any new connections
 - Topics are strings, so they are easy to remember since their purpose can be encoded in their name
-- Can support multiple transport and messaging protolcs with just the switch of a config flag
+- Can support multiple transport and messaging protocols with just the switch of a config flag
 
 ---
 
