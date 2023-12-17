@@ -8,10 +8,21 @@ Today's Topic: **PyToolbox**
 
 ---
 
+# A Word from our Sponsors
+
+Announcements from management
+
+---
+
 # What is PyToolbox
 
 - Implementation of C++ Toolbox in Python
-- Currently focusing on CDX Mesh
+- A library for commonly used functionality in our proprietary software
+
+## Current Work
+
+- ✅ Clients for connecting to CDX Mesh
+- Next, working on a service architecture
 
 ---
 
@@ -26,10 +37,10 @@ What we want to avoid
 ~~~
 ```
 
-- No separation from publishers and subscribers
-- Many messengers all connected
-- Connections done by ports, hard to remember what is taken and what is open
-- Long thought process for each connection
+- `Decoupling` - services need to know the details of how to communicate with each other
+- `Maintainability` - a change to one service can greatly affect the logic in other services
+- `Ports` - Using ports can get quite confusing. You need to make sure no ports in your service are already 
+being used for other communications
 
 ---
 
@@ -43,11 +54,11 @@ What we want to avoid
 ~~~
 ```
 
-- From a user perspective, a publisher simply connects to the broker and publishes messages on a topic
-- From a user perspective, a subscriber simply connects to the broker and receives messages on a topic
-- Simple thought process for any new connections
-- Topics are strings, so they are easy to remember since their purpose can be encoded in their name
-- Can support multiple transport and messaging protocols with just the switch of a config flag
+- `Decoupling` - services send and receive on *topics* from the broker. They do not know anything about other services
+- `Maintainability` - since services do not need to know about each other, changes in one need not affect the others
+and it is trivial to add new pubs / subs
+- `Topics` - topics with meaning are used instead of ports, and can be reused by anyone who has something to say on that topic
+(ex. "scenario.cmd.priamry")
 
 ---
 
@@ -116,11 +127,11 @@ Brett had working prototypes for these three services in 5 working days (Nov 16 
 
 These services:
 
-- Interact with each other over CDX Mesh
+- Interact with the C++ services within our MENTOR system
+- Interact with each other
 - Send voice from microphones
 - Play voice on speakers
-- Train a classification model
-- Use a classification model to match text phrases
-- Speak matched phrases over speakers
+- Use a nlp classification model to match text phrases
+- Send matched phrases as commands throughout the system
 
-These are complicated services, leveraging the Python ecosystem and CDX Mesh.
+These are complicated services, leveraging the Python ecosystem and PyToolbox.
