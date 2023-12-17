@@ -58,7 +58,7 @@ being used for other communications
 - `Maintainability` - since services do not need to know about each other, changes in one need not affect the others
 and it is trivial to add new pubs / subs
 - `Topics` - topics with meaning are used instead of ports, and can be reused by anyone who has something to say on that topic
-(ex. "scenario.cmd.priamry")
+(ex. "scenario.cmd.primary")
 
 ---
 
