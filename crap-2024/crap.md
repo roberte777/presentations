@@ -68,7 +68,16 @@ the developer tool Test Bed Driver
 
 ## Current Status
 
-VCT Launcher is in an alpha state, with most of the core functionality complete.
+VCT Launcher can:
 
-Most of the designs from the Northstar team have not been implemented.
+- Start and stop all services in a testbed
+- Start and stop AFSIM
+- Display scenarios
+- Swap scenarios
+- Hanlde lifecycle management (STO, STA, etc.)
 
+VCT Launcher is missing:
+
+- Implementation of the designs from the Northstar team
+- Swapping score service to different scnearios
+- Service option management
