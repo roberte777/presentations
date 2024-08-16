@@ -2,6 +2,8 @@
 title: This Week's CRAP
 sub_title: (Terminal Edition)
 author: Ethan Wilkes
+theme:
+    name: terminal-dark
 ---
 # Boss Announcements
 
@@ -12,7 +14,7 @@ A friendly word from today's sponsors:
 - Bill
 - Ashley
 
----
+<!-- end_slide -->
 
 # VCT Ecosystem
 
@@ -51,7 +53,7 @@ These goals resulted in the following software that I actively maintain:
 - Auto Client Editor
 - CdxBroker
 
----
+<!-- end_slide -->
 
 # VCT Launcher
 
@@ -61,6 +63,8 @@ These goals resulted in the following software that I actively maintain:
 the developer tool Test Bed Driver
 - Evolved into a cross team effort
 - Supported by Northstar, Keres, and the "tools team"
+
+<!-- new_line -->
 
 ## Current Status
 
