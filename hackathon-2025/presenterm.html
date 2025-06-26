@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+        pre {
+            margin: 0;
+            padding: 0;
+        }
+
+        span {
+            display: inline-block;
+        }
+
+        body {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.6;
+            font-family: 'Courier New', monospace;
+            background-color: #1e1e2e;
+            color: #cdd6f4;
+            padding: 20px;
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            page-break-after: always;
+        }
+
+        .content-line {
+            line-height: 1.6;
+            margin: 4px 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .title {
+            background-color: #1e1e2e; 
+            color: #a6e3a1; 
+            font-size: 2em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .date {
+            background-color: #1e1e2e; 
+            color: #f9e2af;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .authors {
+            background-color: #1e1e2e; 
+            color: #bac2de;
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        .section-title {
+            background-color: #1e1e2e; 
+            color: #f9e2af; 
+            font-weight: bold; 
+            font-size: 1.5em;
+            margin: 30px 0 20px 0;
+        }
+
+        .content-text {
+            background-color: #1e1e2e; 
+            color: #cdd6f4;
+            text-align: left;
+            max-width: 800px;
+            margin: 10px auto;
+            padding: 0 20px;
+        }
+
+        .bullet-point {
+            margin: 8px 0;
+            padding-left: 20px;
+        }
+
+        .highlight {
+            font-weight: bold;
+        }
+
+        .page-number {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #1e1e2e; 
+            color: #cdd6f4;
+            font-size: 0.9em;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .navigation {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgba(30, 30, 46, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+
+        @media print {
+            .navigation, .page-number {
+                display: none;
+            }
+            .container {
+                page-break-after: always;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+                padding: 10px;
+            }
+            .container {
+                padding: 20px 10px;
+            }
+            .content-text {
+                padding: 0 10px;
+            }
+        }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="content-line">
+        <span class="title">Hackathon 0.1.0-beta.28062025</span>
+    </div>
+    <div class="content-line">
+        <span class="date">June 28, 2025</span>
+    </div>
+    <div class="content-line">
+        <span class="authors">Ethan Wilkes, Dan Kolan</span>
+    </div>
+</div>
+
+<div class="container">
+    <div class="content-line">
+        <span class="section-title">Itinerary</span>
+    </div>
+    <div class="content-text">
+        <div class="bullet-point">• Kickoff / Chick-fil-a Breakfast: 9 a.m.</div>
+        <div class="bullet-point">• Hacking: 9-6</div>
+        <div class="bullet-point">• Donatos Lunch: 12 p.m.</div>
+        <div class="bullet-point">• Demo: Monday 11-1 (Chick-fil-a provided)</div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="content-line">
+        <span class="section-title">What are we doing</span>
+    </div>
+    <div class="content-text">
+        <div class="bullet-point">• Event intended to work on fun ideas</div>
+        <div class="bullet-point">• Projects don't need to be polished, feature rich, or "exciting" to be successful</div>
+        <div class="bullet-point">• Projects don't have to be submitted for prizes</div>
+        <div class="bullet-point">• We would love if everyone would demo on Monday</div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="content-line">
+        <span class="section-title">Rules</span>
+    </div>
+    <div class="content-text">
+        <div style="margin: 20px 0;">
+            Rules are only for <span class="highlight">teams competing for prizes.</span>
+        </div>
+        <div style="margin: 20px 0;">
+            If you are not competing, we would still love for you to present at the demo.
+        </div>
+        <div class="bullet-point">• Maximum team size is capped at five members</div>
+        <div class="bullet-point">• Work can be done any time and place from Saturday 9 a.m. - Monday 11 a.m.</div>
+        <div class="bullet-point">• All work on the project should be done during the hackathon (not before)</div>
+        <div class="bullet-point">• Teams can use an idea they had and planned before the event.</div>
+        <div style="margin: 20px 0;">
+            No other rules! Feel free to use AI, software libraries, etc.
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="content-line">
+        <span class="section-title">Happy Hacking!</span>
+    </div>
+</div>
+
+<div class="page-number">
+    <span id="current-page">1</span> / <span id="total-pages">5</span>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const pages = document.querySelectorAll('.container');
+  const totalPages = pages.length;
+  let currentPageIndex = 0;
+
+  document.getElementById('total-pages').textContent = totalPages;
+
+  function showCurrentPage() {
+    pages.forEach((page, index) => {
+      page.classList.toggle('hidden', index !== currentPageIndex);
+    });
+    document.getElementById('current-page').textContent = currentPageIndex + 1;
+  }
+
+  function handleKeyPress(event) {
+    if (event.key === 'ArrowLeft' && currentPageIndex > 0) {
+      currentPageIndex--;
+      showCurrentPage();
+    } else if (event.key === 'ArrowRight' && currentPageIndex < totalPages - 1) {
+      currentPageIndex++;
+      showCurrentPage();
+    }
+  }
+
+  document.addEventListener('keydown', handleKeyPress);
+  showCurrentPage();
+});
+</script>
+</body>
+</html>
